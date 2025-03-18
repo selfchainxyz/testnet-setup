@@ -9,6 +9,7 @@
 
 ## Step 3: Update Configuration  
 - Modify the following settings in **`config.toml`** as required.
+- persistent_peers = "447c1f962696fcdd6c31ca1ae073c97c9cb15f58@3.138.56.49:26656"
 
 ## Step 4: Run Older Binary  
 - Start the **older binary** and let it run until it **stops indexing** for **v2 version**. 
