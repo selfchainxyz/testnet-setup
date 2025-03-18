@@ -11,8 +11,8 @@
 - Modify the following settings in **`config.toml`** as required.
 
 ## Step 4: Run Older Binary  
-- Start the **older binary** and let it run until it **stops indexing** for **v2 version**.
+- Start the **older binary** and let it run until it **stops indexing** for **v2 version**. 
 
 ## Step 5: Upgrade to CosmWasm Binary  
-- Replace the older binary with the **updated CosmWasm binary**.  
+- Replace the older binary with the **updated CosmWasm binary**.   - https://drive.google.com/file/d/1nuuqllKvI7AzXBXj6agCpEMYAHLtdvL3/view?usp=sharing
 - Continue running the node until it reaches the **top block**.
