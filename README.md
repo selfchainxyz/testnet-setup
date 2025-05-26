@@ -37,6 +37,9 @@ Before initializing the new validator, clear your current chain data:
 ```bash
 rm -rf ~/.selfchain/
 ```
+> **⚠️ Note:** The path `~/.selfchain/` assumes you are using the default home directory setup.  
+> If you have customized the `--home` directory, **adjust the path accordingly**.  
+> Most setups will have it here, but **double-check before deleting** to avoid accidental data loss.
 
 ---
 
