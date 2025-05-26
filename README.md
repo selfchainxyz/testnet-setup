@@ -80,15 +80,25 @@ If you require additional testnet tokens, please request an airdrop from the Sel
 
 ## 6. Start the Node
 
-Run the node process in the background:
+You **must** start the node and ensure it is fully synced before proceeding.
+
+Start the node process in the background:
 
 ```bash
 nohup ./selfchaind-linux-amd64 start > selfchain-testnet.logs &
 ```
+Check the live logs to confirm the node is syncing:
+```bash
+tail -f selfchain-testnet.logs
+```
+Check the node’s current status:
+```bash
+./selfchaind-linux-amd64 status
+```
 
 ## 7. Create Validator
 
-Execute the following command to register your validator with the network:
+Once Node is in sync, Execute the following command to register your validator with the network:
 
 ```bash
 ./selfchaind-linux-amd64 tx staking create-validator \
