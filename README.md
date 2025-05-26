@@ -78,7 +78,15 @@ If you require additional testnet tokens, please request an airdrop from the Sel
 
 ---
 
-## 6. Create Validator
+## 6. Start the Node
+
+Run the node process in the background:
+
+```bash
+nohup ./selfchaind-linux-amd64 start > selfchain-testnet.logs &
+```
+
+## 7. Create Validator
 
 Execute the following command to register your validator with the network:
 
@@ -102,7 +110,7 @@ Replace `<wallet_name>` and `<validator_name>` with your actual wallet and valid
 
 ---
 
-## 7. Verify Setup
+## 8. Verify Setup
 
 Check your validator status using:
 
@@ -114,6 +122,6 @@ Ensure your validator is active and correctly funded.
 
 ---
 
-## 8. Additional Support
+## 9. Additional Support
 
 For any questions or issues, reach out to the SelfChain testnet support team via Discord.
