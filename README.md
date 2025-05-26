@@ -28,6 +28,12 @@ After extraction, you should have these three files:
 * `genesis.json`
 * `selfchaind-linux-amd64`
 
+Make the binary executable:
+
+```bash
+chmod +x ./selfchaind-linux-amd64
+```
+
 ---
 
 ## 2. Clear Existing Setup
