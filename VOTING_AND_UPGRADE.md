@@ -69,6 +69,8 @@ chmod +x selfchaind-linux-amd64
 sudo mv selfchaind-linux-amd64 /usr/local/bin/selfchaind
 ```
 
+> **Note**: If you have previously downloaded the binary, please re-download it to ensure you have the latest version.
+
 ### 4. Verify Binary Version
 ```bash
 selfchaind version
