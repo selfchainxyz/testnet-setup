@@ -89,10 +89,11 @@ tail -f selfchain-testnet.logs
 
 Check the node's current status:
 ```bash
-selfchaind status --node https://rpc-testnet.selfchain.xyz:26657
+selfchaind status
 ```
 
 ### 6. Verify Node Status
+To verify your node's status against the testnet:
 ```bash
 selfchaind status --node https://rpc-testnet.selfchain.xyz:26657
 ```
@@ -103,7 +104,7 @@ After upgrading, verify the following:
 
 1. Check node synchronization:
 ```bash
-selfchaind status --node https://rpc-testnet.selfchain.xyz:26657 | jq .SyncInfo
+selfchaind status | jq .SyncInfo
 ```
 
 2. Verify the new version is running:
@@ -133,4 +134,4 @@ If you encounter issues during the upgrade:
 3. Ensure all required dependencies are installed
 4. If necessary, rollback to the previous version using the backup binary
 
-For additional support, please refer to the official documentation or community channels. 
+For any questions or issues, reach out to the SelfChain testnet support team via Discord.
