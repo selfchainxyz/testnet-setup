@@ -60,13 +60,13 @@ cp $(which selfchaind) ~/selfchaind_backup
 ### 3. Download and Install New Binary
 ```bash
 # Download the new binary
-wget <new_binary_url>
+wget https://github.com/selfchainxyz/testnet-setup/releases/download/testnet-v2.0.0/selfchaind-linux-amd64
 
 # Make it executable
-chmod +x selfchaind
+chmod +x selfchaind-linux-amd64
 
 # Move to the correct location
-sudo mv selfchaind /usr/local/bin/
+sudo mv selfchaind-linux-amd64 /usr/local/bin/selfchaind
 ```
 
 ### 4. Verify Binary Version
@@ -79,7 +79,7 @@ You must start the node and ensure it is fully synced before proceeding.
 
 Start the node process in the background:
 ```bash
-nohup ./selfchaind-linux-amd64 start > selfchain-testnet.logs &
+nohup selfchaind start > selfchain-testnet.logs &
 ```
 
 Check the live logs to confirm the node is syncing:
@@ -89,7 +89,7 @@ tail -f selfchain-testnet.logs
 
 Check the node's current status:
 ```bash
-./selfchaind-linux-amd64 status --node https://rpc-testnet.selfchain.xyz:26657
+selfchaind status --node https://rpc-testnet.selfchain.xyz:26657
 ```
 
 ### 6. Verify Node Status
